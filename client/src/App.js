@@ -21,6 +21,10 @@ import Categories from "./pages/Categories";
 import CategoryProduct from "./pages/CategoryProduct";
 import CartPage from "./pages/CartPage";
 import AdminOrders from "./pages/Admin/AdminOrders";
+import axios from "axios";
+
+axios.defaults.baseURL = process.env.REACT_APP_API;
+
 function App() {
   return (
     <>

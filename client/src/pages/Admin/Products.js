@@ -39,8 +39,8 @@ const Products = () => {
               >
                 <div className="card m-2" style={{ width: "18rem" }}>
                   <img
-                    src={`/api/v1/product/product-photo/${p._id}`}
-                    className="card-img-top"
+                    src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
+                    className="card-img-top img-fluid"
                     alt={p.name}
                   />
                   <div className="card-body">
